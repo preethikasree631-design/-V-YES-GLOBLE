@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V Yes Global</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0b1c2c;
+  color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+}
+
+.navbar h2{
+  color:#4fd1c5;
+}
+
+.nav-links a{
+  margin-left:20px;
+  color:#ccc;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero video{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.65);
+  z-index:-1;
+}
+
+.hero h1{
+  font-size:55px;
+}
+
+.hero span{
+  color:#4fd1c5;
+}
+
+.hero p{
+  margin:15px 0;
+  color:#ddd;
+}
+
+.btn{
+  padding:12px 25px;
+  margin:10px;
+  border:1px solid #4fd1c5;
+  background:transparent;
+  color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#4fd1c5;
+  color:#000;
+}
+
+.stats{
+  display:flex;
+  gap:40px;
+  justify-content:center;
+  margin-top:30px;
+}
+
+/* SECTORS */
+.section{
+  background:#f5f7fa;
+  color:#000;
+  padding:60px;
+}
+
+.section h2{
+  color:#4caf50;
+  margin-bottom:30px;
+}
+
+.cards{
+  display:flex;
+  gap:25px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  width:33%;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* GLOBAL SECTION (CLEAN LIKE IMAGE) */
+.global{
+  display:flex;
+  gap:40px;
+  padding:70px;
+  background:#f5f7fa;
+  color:#000;
+  align-items:center;
+}
+
+.global-text{
+  flex:1;
+}
+
+.global-text h2{
+  font-size:32px;
+  color:#2e7d32;
+}
+
+.global-text p{
+  margin:15px 0;
+  color:#555;
+}
+
+/* LOCATION BOXES */
+.location-box{
+  display:flex;
+  gap:15px;
+  margin-top:15px;
+}
+
+.loc{
+  flex:1;
+  padding:15px;
+  border-radius:8px;
+  color:#fff;
+}
+
+.loc1{
+  background:linear-gradient(90deg,#2e7d32,#66bb6a);
+}
+
+.loc2{
+  background:linear-gradient(90deg,#1565c0,#42a5f5);
+}
+
+/* IMAGE CARD */
+.global-img{
+  flex:1;
+  background:#0b1c2c;
+  border-radius:15px;
+  padding:10px;
+}
+
+.global-img img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* SUBSCRIBE */
+.subscribe{
+  text-align:center;
+  padding:60px;
+  background:#f5f7fa;
+  color:#000;
+}
+
+.subscribe h2{
+  color:#4caf50;
+}
+
+.subscribe input{
+  padding:12px;
+  width:260px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.subscribe button{
+  padding:12px 20px;
+  margin-left:10px;
+  border:none;
+  background:#4caf50;
+  color:#fff;
+  border-radius:5px;
+}
+
+/* FOOTER */
+.footer{
+  background:#0b1c2c;
+  color:#aaa;
+  padding:40px 60px;
+}
+
+.footer-top{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.footer h3{
+  color:#4fd1c5;
+}
+
+.footer p{
+  margin:8px 0;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:20px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>V Yes Global</h2>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div>
+    <h1>Empowering <span>Global Visions</span></h1>
+    <p>Leading the way in finance, digital innovation, and manufacturing.</p>
+
+    <button class="btn">View Strategic Map</button>
+    <button class="btn">Explore Our Site</button>
+
+    <div class="stats">
+      <div><h3>3+</h3><p>States</p></div>
+      <div><h3>30L+</h3><p>Assets</p></div>
+      <div><h3>2+</h3><p>Partners</p></div>
+      <div><h3>3</h3><p>Sectors</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTORS -->
+<div class="section">
+  <h2>Our Strategic Sectors</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Loans & Insurance</h3>
+      <p>Corporate and personal financial solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Branding & Digital</h3>
+      <p>Digital strategies and branding solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Furniture & Products</h3>
+      <p>Modern ergonomic furniture manufacturing.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GLOBAL -->
+<div class="global">
+  <div class="global-text">
+    <h2>Connecting Continents, Creating Value.</h2>
+    <p>We connect global markets and opportunities across regions.</p>
+
+    <div class="location-box">
+      <div class="loc loc1">
+        <strong>Headquarters</strong>
+        <p>Bangalore - 560015</p>
+      </div>
+
+      <div class="loc loc2">
+        <strong>Regional Hub</strong>
+        <p>Bangalore (KA)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="global-img">
+    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564">
+  </div>
+</div>
+
+<!-- SUBSCRIBE -->
+<div class="subscribe">
+  <h2>Ready to Expand Your Vision?</h2>
+  <p>Join our network of innovators.</p>
+
+  <br>
+
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-top">
+    <div>
+      <h3>V Yes Global</h3>
+      <p>A diversified global holding company.</p>
+    </div>
+
+    <div>
+      <h4>Sectors</h4>
+      <p>Loans & Finance</p>
+      <p>Digital Marketing</p>
+      <p>Furniture</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <p>About Us</p>
+      <p>Contact</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Bangalore, India</p>
+      <p>info@vyesglobal.com</p>
+      <p>+91 99999 99999</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 V Yes Global. All rights reserved.
+  </div>
+</div>
+<style>
+/* ===== NAVBAR BUTTON EFFECT ===== */
+.nav-links a{
+  margin-left:20px;
+  color:#ccc;
+  text-decoration:none;
+  transition:0.3s;
+  padding:6px 10px;
+  border-radius:5px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* hover */
+.nav-links a:hover{
+  color:#fff;
+  background:rgba(79,209,197,0.2);
+}
+
+/* touch / click */
+.nav-links a:active{
+  background:#4fd1c5;
+  color:#000;
+  transform:scale(0.95);
+}
+
+/* ===== SUBSCRIBE BUTTON EFFECT ===== */
+.subscribe button{
+  padding:12px 20px;
+  margin-left:10px;
+  border:none;
+  background:#4caf50;
+  color:#fff;
+  border-radius:5px;
+  transition:0.3s;
+  cursor:pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* hover */
+.subscribe button:hover{
+  background:#66bb6a;
+}
+
+/* touch / click */
+.subscribe button:active{
+  background:#2e7d32;
+  transform:scale(0.95);
+}
+</style>
+</body>
+</html>
